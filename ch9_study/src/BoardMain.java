@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class BoardMain{
-	public static void main(){
+	public static void main(String args[]){
 		boolean isStop = false;
 		Scanner sc = new Scanner(System.in);
 		BoardSVC boardSVC = new BoardSVC();
@@ -23,10 +23,12 @@ public class BoardMain{
 				boardSVC.listArticle(sc);
 				break;
 			case "3":
-				boardSVC 
+				boardSVC.removeArticle(sc);
+				break;
 			case "4":
+				isStop = true;
 			}
-		}while(isStop);
+		}while(!isStop);
 		
 	}
 }
