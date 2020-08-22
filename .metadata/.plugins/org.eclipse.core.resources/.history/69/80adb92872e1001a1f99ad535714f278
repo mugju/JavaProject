@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class MemberMain{
+	static MemberVO[] members;
+	
+	public static void main(String args[]){
+		MemberService memberservice = new MemberService();
+		Scanner sc = new Scanner(System.in);
+		members = new MemberVO[0];
+		boolean isStop = false;
+	
+		do{
+			
+		}while(isStop);
+	}
+}

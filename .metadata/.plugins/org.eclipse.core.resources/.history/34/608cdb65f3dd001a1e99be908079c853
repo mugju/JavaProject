@@ -1,0 +1,4 @@
+interface Interface1{
+	int interVar = 10;
+	void interface1Method();
+}

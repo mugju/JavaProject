@@ -1,0 +1,14 @@
+class Student{
+	int school;
+	public Student(int school){
+		this.school = school;
+	}
+}
+
+enum SchoolType{
+	Elementary , Middle, High, Collage
+}
+
+public class enumTest{
+	Student st1 = new Student(SchoolType.Elementary);
+}

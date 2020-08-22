@@ -1,0 +1,15 @@
+abstract class vehicle{
+	abstract void move();
+}
+
+class Car extends vehicle{
+	void move(){
+		System.out.println("차도로 다닌다.");
+	}
+}
+
+class Ship extends vehicle{
+	void move(){
+		System.out.println("바닷길로 다닌다".);
+	}
+}

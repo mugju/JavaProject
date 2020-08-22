@@ -1,0 +1,7 @@
+import java.util.Scanner;
+
+public class ListAction implements Action{
+	public void excute(Scanner sc){
+		MemberVO[] MemberMain.members;
+	}
+}

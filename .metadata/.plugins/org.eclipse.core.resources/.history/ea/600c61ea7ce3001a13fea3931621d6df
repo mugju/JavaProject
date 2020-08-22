@@ -1,0 +1,9 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class BoardSVC{
+	ArrayList<BoardVO> boardList;
+	public BoardSVC(){
+		boardList  = new ArrayList<BoardVO>();
+	}
+}

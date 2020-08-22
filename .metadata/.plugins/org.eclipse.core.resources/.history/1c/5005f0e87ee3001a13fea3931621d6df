@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class BoardSVC{
+	ArrayList<BoardVO> boardList;
+	public BoardSVC(){
+		boardList  = new ArrayList<BoardVO>();
+		
+	}
+	
+	public void writeArticle(Scanner sc){
+		System.out.println("게시판 글을 작성하세요.");
+		System.out.print("작성자 : ");
+		String register = sc.next();
+		System.out.println("이메일 : ");
+		String email = sc.next();
+		System.out.println("비밀번호 : ");
+		String passwd = sc.next();
+		System.out.println("제목 : ");
+		String subject = sc.next();
+		System.out.println("글 내용 : ");
+		String content = sc.next();
+		
+		BoardVO boardVO = new BoardVO(register, subject, email, content, passwd);
+		addArticle(boardVO);
+	}
+	
+	
+	private void addArticle(BoardVO boardVO){
+		boardList.add(boardVO);
+	}
+}

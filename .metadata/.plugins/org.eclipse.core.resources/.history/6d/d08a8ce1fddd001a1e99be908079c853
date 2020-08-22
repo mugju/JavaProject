@@ -1,0 +1,4 @@
+interface In1{
+	int x =10;
+	void In1Method();
+}

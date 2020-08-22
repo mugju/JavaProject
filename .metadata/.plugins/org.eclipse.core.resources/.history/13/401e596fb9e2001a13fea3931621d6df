@@ -1,0 +1,22 @@
+class Student4{
+	String name;
+	int number;
+	public Student4(String name, int number){
+		super();
+		this.name = name;
+		this.number = number;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		Student4 st = null;
+		
+		if(obj instanceof Student4){
+			st = Student4(obj)
+		}
+		
+	}
+	
+	
+}

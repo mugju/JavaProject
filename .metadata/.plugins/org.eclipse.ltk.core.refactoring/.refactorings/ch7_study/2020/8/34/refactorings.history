@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ch7_study/src/ListCommand&apos; to &apos;ListCommand.java&apos;" description="Rename resource &apos;ListCommand&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ListCommand" name="ListCommand.java" stamp="1597718195430" updateReferences="true"/>
+</session>

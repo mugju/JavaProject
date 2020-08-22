@@ -1,0 +1,9 @@
+abstract class AbstructClass{
+	int age;
+	
+	void generalMethod(){
+		System.out.println("일반 메소드");
+	}
+	
+	abstract void abstractMethod();
+}

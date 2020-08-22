@@ -1,0 +1,10 @@
+public class CastingTest{
+	//캐스팅 테스트
+	
+	public static void main(String args[]){
+		President president1 = new President();
+		
+		Person person1 = president1;
+		
+	}
+}
