@@ -1,7 +1,0 @@
-abstract class Abstract1{
-	abstract void abMethod1();
-}
-
-abstract class Abstract2 extends Abstract1{
-	abstract void abMethod2();
-}

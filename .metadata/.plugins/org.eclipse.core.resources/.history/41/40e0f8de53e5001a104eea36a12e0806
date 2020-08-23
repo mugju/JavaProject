@@ -1,0 +1,6 @@
+import java.util.HashMap;
+
+public class LoginSVC{
+	private HashMap<String, String> loginDatas;
+	private HashMap<String, User> userDatas;
+}
