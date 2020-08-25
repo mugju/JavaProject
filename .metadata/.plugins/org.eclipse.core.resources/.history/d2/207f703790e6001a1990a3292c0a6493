@@ -43,7 +43,7 @@ public class Dicemain {
 			System.out.println("고정시킬 다이스는" + fixDice + "번쨰 입니다. 고정하고 나머지를 굴립니다."); // 예외처리
 																				// 들어가야함.
 			dice[fixDice - 1].isFixed = true;
-		}while(!isStop && count == 3 );
+		}while(!isStop || count==3 );
 		up.checkScore(dice);
 		lp.checkScore(dice);
 	}
