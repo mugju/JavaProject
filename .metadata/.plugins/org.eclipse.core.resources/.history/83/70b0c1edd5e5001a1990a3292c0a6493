@@ -1,0 +1,12 @@
+import java.util.Random;
+
+public class Dicemain{
+	public static void main(String args[]){
+		
+		UpperPoint up = new UpperPoint();
+		LowerPoint lp = new LowerPoint();
+		
+		
+		
+	}
+}

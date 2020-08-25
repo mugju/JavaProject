@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;YachtGame/src/UpperPoint&apos; to &apos;UpperPoint.java&apos;" description="Rename resource &apos;UpperPoint&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/UpperPoint" name="UpperPoint.java" stamp="1598246468706" updateReferences="true"/>
+</session>

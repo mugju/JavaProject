@@ -1,0 +1,6 @@
+public class Dice{
+	public int number;
+	
+	boolean isFixed = false;
+	
+}

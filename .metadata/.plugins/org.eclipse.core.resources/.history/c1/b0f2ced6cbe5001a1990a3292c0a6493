@@ -1,0 +1,8 @@
+public class UpperPoint{
+	private int onePoint;
+	private int twoPoint;
+	private int threePoint;
+	private int fourPoint;
+	private int fivePoint;
+	private int sixPoint;
+}

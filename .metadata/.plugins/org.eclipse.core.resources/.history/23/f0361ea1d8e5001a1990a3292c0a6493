@@ -1,0 +1,21 @@
+import java.util.Random;
+
+public class Dicemain{
+	public static void main(String args[]){
+		
+		UpperPoint up = new UpperPoint();
+		LowerPoint lp = new LowerPoint();
+		
+		Random random = new Random();
+		
+		Dice[] dice = new Dice[6];
+		
+		
+		for(int i = 0; i<6;i++){
+			if(!(dice[i].isFixed)){//고정 안하는 경우
+				System.out.println(random.nextInt(6));
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,59 @@
+public class UpperPoint{
+	private int onePoint;
+	private int twoPoint;
+	private int threePoint;
+	private int fourPoint;
+	private int fivePoint;
+	private int sixPoint;
+	
+	private int bonus;
+	
+	
+	public int getOnePoint() {
+		return onePoint;
+	}
+	public void setOnePoint(int onePoint) {
+		this.onePoint = onePoint;
+	}
+	public int getTwoPoint() {
+		return twoPoint;
+	}
+	public void setTwoPoint(int twoPoint) {
+		this.twoPoint = twoPoint;
+	}
+	public int getThreePoint() {
+		return threePoint;
+	}
+	public void setThreePoint(int threePoint) {
+		this.threePoint = threePoint;
+	}
+	public int getFourPoint() {
+		return fourPoint;
+	}
+	public void setFourPoint(int fourPoint) {
+		this.fourPoint = fourPoint;
+	}
+	public int getFivePoint() {
+		return fivePoint;
+	}
+	public void setFivePoint(int fivePoint) {
+		this.fivePoint = fivePoint;
+	}
+	public int getSixPoint() {
+		return sixPoint;
+	}
+	public void setSixPoint(int sixPoint) {
+		this.sixPoint = sixPoint;
+	}
+	
+	public void isBonus(){
+		
+	}
+	
+	@Override
+	public String toString() {
+		return "UpperPoint [onePoint=" + onePoint + ", twoPoint=" + twoPoint + ", threePoint=" + threePoint
+				+ ", fourPoint=" + fourPoint + ", fivePoint=" + fivePoint + ", sixPoint=" + sixPoint + "]";
+	}
+	
+}

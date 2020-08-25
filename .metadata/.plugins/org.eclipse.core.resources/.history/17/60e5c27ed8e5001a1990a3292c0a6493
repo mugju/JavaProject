@@ -1,0 +1,10 @@
+//Four of kind, Full house, Small Straight, Large Straight, chance, Yachu
+
+public class LowerPoint{
+	private int fourkind;
+	private int fullHouse;
+	private int smallStraight;
+	private int largeStraight;
+	private int chance;
+	private int yachu;
+}

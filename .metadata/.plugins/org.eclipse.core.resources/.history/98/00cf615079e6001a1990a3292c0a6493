@@ -1,0 +1,84 @@
+//Four of kind, Full house, Small Straight, Large Straight, chance, Yachu
+
+public class LowerPoint implements Check_score {
+	private int fourkind;
+	private int fullHouse;
+	private int smallStraight;
+	private int largeStraight;
+	private int chance;
+	private int yachu;
+
+	public int getFourkind() {
+		return fourkind;
+	}
+
+	public void setFourkind(int fourkind) {
+		this.fourkind = fourkind;
+	}
+
+	public int getFullHouse() {
+		return fullHouse;
+	}
+
+	public void setFullHouse(int fullHouse) {
+		this.fullHouse = fullHouse;
+	}
+
+	public int getSmallStraight() {
+		return smallStraight;
+	}
+
+	public void setSmallStraight(int smallStraight) {
+		this.smallStraight = smallStraight;
+	}
+
+	public int getLargeStraight() {
+		return largeStraight;
+	}
+
+	public void setLargeStraight(int largeStraight) {
+		this.largeStraight = largeStraight;
+	}
+
+	public int getChance() {
+		return chance;
+	}
+
+	public void setChance(int chance) {
+		this.chance = chance;
+	}
+
+	public int getYachu() {
+		return yachu;
+	} 
+
+	public void setYachu(int yachu) {
+		this.yachu = yachu;
+	}
+
+	public void checkScore(Dice dice[]) {
+		// 야추의 경우
+		if (dice[0].number == dice[1].number && dice[1].number == dice[2].number && dice[2].number == dice[3].number
+				&& dice[3].number == dice[4].number) {
+			System.out.println("Yachu : " + 50);
+		}
+		// chance의 경우
+		int sum = 0;
+		for (int i = 0; i < dice.length; i++) {
+			sum += dice[i].number;
+		}
+		System.out.println("chance : " + sum);
+		//four of kind의 경우
+		int sameFour = 0;
+		for(int i = 0 ; i<dice.length; i++){
+			
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "LowerPoint [fourkind=" + fourkind + ", fullHouse=" + fullHouse + ", smallStraight=" + smallStraight
+				+ ", largeStraight=" + largeStraight + ", chance=" + chance + ", yachu=" + yachu + "]";
+	}
+
+}
