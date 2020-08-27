@@ -1,3 +1,4 @@
 interface Check_score{
-	void checkScore(Dice dice[]);
+	int checkScore(Dice dice[], int Scoreset);
+	void setScore(Dice dice[], int Scoreset);
 } 

@@ -1,7 +1,0 @@
-import java.util.Scanner;
-public class UpdateAction implements Action{
-	
-	public void excute(Scanner sc){
-		
-	}
-}

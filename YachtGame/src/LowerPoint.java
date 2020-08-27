@@ -56,7 +56,7 @@ public class LowerPoint implements Check_score {
 		this.yachu = yachu;
 	}
 
-	public void checkScore(Dice dice[]) {
+	public int checkScore(Dice dice[], int Scoreset) {
 		boolean [] dicearr = {false,false,false,false,false,false,false}; // 0~6  코드의 가독성을 위해 0번은 비우둔 채로 진행.
 		// 야추의 경우
 		if (dice[0].number == dice[1].number && dice[1].number == dice[2].number && dice[2].number == dice[3].number
@@ -88,9 +88,21 @@ public class LowerPoint implements Check_score {
 			}
 		}
 		System.out.println("Four of kind : " + resultFour);
-		
+		//풀 하우스의 경우
+		int full_check = 0;
+		if(sameFour >= 3){ //일단 같은게 3개이상 있을떄 접근함.
+			for(int i=0;i<dicearr.length;i++){
+				if(dicearr[i] == true){
+					full_check++;
+				}
+			}
+		}
+		int fullhouse = 0;
+		if(full_check == 2){
+			fullhouse = sum; //풀하우스일경우 모든 주사위의 합이 점수임
+		}
 		//라지스트레이트 의 경우
-		//boolean [] dicearr = {false,false,false,false,false,false,false}; // 0~6  코드의 가독성을 위해 0번은 비우둔 채로 진행.
+		
 		int straight = 0;
 		for(int i = 0; i<dicearr.length; i++){
 			if(dicearr[i] == true){
@@ -115,6 +127,41 @@ public class LowerPoint implements Check_score {
 		}
 		else
 			System.out.println("Short Straight : " + largeStraight);
+		
+		if(Scoreset == 7){return resultFour;}
+		else if(Scoreset == 8){return fullhouse;} //fullhouse자리
+		else if(Scoreset == 9){return shortStraight;}
+		else if(Scoreset == 10){return largeStraight;}
+		else if(Scoreset == 11){return sum;}
+		else if(Scoreset == 12){return 50;}
+		else
+			return 0; //컴파일 오류때문에 적어놓음
+	}
+	
+	
+	public void setScore(Dice dice[], int Scoreset){
+		switch (Scoreset) {
+		case 7:
+			this.setFourkind(this.checkScore(dice, Scoreset));
+			break;
+		case 8:
+			this.setFullHouse(this.checkScore(dice, Scoreset));
+			break;
+		case 9:
+			this.setSmallStraight(this.checkScore(dice, Scoreset));
+			break;
+		case 10:
+			this.setLargeStraight(this.checkScore(dice, Scoreset));
+			break;
+		case 11:
+			this.setChance(this.checkScore(dice, Scoreset));
+			break;
+		case 12:
+			this.setYachu(this.checkScore(dice, Scoreset));
+			break;
+		default:
+			break;
+		}
 	}
 
 	@Override
